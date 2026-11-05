@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demorchid</title>
+<style>
+  /* ═══════════════════════════════════════════════════
+     🎨 ZONE À PERSONNALISER — TES COULEURS (Page 1)
+     ═══════════════════════════════════════════════════ */
+  :root {
+    --fond:         #fdf3f0;   /* fond de la page */
+    --carte:        #ffffff;   /* fond de la carte centrale */
+    --texte:        #4a3b4a;   /* couleur du texte */
+    --sous-texte:   #8a7a8a;   /* couleur du sous-titre */
+    --bouton:       #b14a6e;   /* fond des boutons */
+    --bouton-texte: #ffffff;   /* texte des boutons */
+    --police:       'Georgia', 'Times New Roman', serif;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    min-height:100vh;
+    background:var(--fond);
+    font-family:var(--police);
+    color:var(--texte);
+    display:flex;
+    justify-content:center;
+    padding:24px 16px;
+  }
+
+  .hub {
+    width:100%;
+    max-width:420px;
+    text-align:center;
+  }
+
+  /* 🎨 TON AVATAR / LOGO ICI (cœur, photo, dessin…) */
+  .avatar {
+    width:96px; height:96px;
+    margin:20px auto 16px;
+    background:var(--bouton);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:40px;
+  }
+
+  h1 { font-size:26px; margin-bottom:6px; }
+  .sous-titre {
+    color:var(--sous-texte);
+    font-size:14px;
+    margin-bottom:32px;
+    letter-spacing:.5px;
+  }
+
+  /* les boutons (style Linktree) */
+  .bouton {
+    display:block;
+    background:var(--bouton);
+    color:var(--bouton-texte);
+    text-decoration:none;
+    padding:16px;
+    border-radius:14px;
+    margin-bottom:14px;
+    font-size:17px;
+    box-shadow:0 2px 8px rgba(0,0,0,.10);
+    transition:transform .1s ease, filter .1s ease;
+  }
+  .bouton:active { transform:scale(.97); filter:brightness(.95); }
+
+  /* bouton "à venir" (désactivé visuellement) */
+  .bouton.avenir {
+    opacity:.45;
+    pointer-events:none;
+  }
+
+  footer {
+    margin-top:36px;
+    color:var(--sous-texte);
+    font-size:12px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       🎨 ZONE À PERSONNALISER — LE CONTENU (Page 1)
+       ═══════════════════════════════════════════════ -->
+  <div class="hub">
+
+    <!-- 🎨 Remplace ce rond par ton image : <img src="ton-coeur.png"> -->
+    <div class="avatar">🌸</div>
+
+    <!-- ✏️ Ton titre / sous-titre -->
+    <h1>❤️ Petit hub 🧡</h1>
+    <p class="sous-titre">Coucou chou ✨ ! Ici, tu retrouveras la plupart des choses que j'ai pu faire et qui ont nécessité des fichiers d'une façon ou d'une autre. C'est une sorte de back up !</p>
+
+    <!-- Les boutons du hub : Page 1 → Page 2 et Page 5 -->
+    <a class="bouton" href="notices.html">🌸 Demorchid 🌿</a>
+    <a class="bouton" href="mon-chat.html">📚 « Mon chat » 🐈‍⬛</a>
+    <a class="bouton" href="page-5.html">✨ Petit mot doux ❤️</a>
+
+    <footer>Fait avec beaucoup d'amour 🥰</footer>
+  </div>
+
+</body>
+</html>

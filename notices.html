@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notices</title>
+<style>
+  /* ═══════════════════════════════════════════════════
+     🎨 ZONE À PERSONNALISER — TES COULEURS (Page 2)
+     ═══════════════════════════════════════════════════ */
+  :root {
+    --fond:         #fdf3f0;
+    --texte:        #4a3b4a;
+    --sous-texte:   #8a7a8a;
+    --bouton:       #b14a6e;
+    --bouton-texte: #ffffff;
+    --police:       'Georgia', 'Times New Roman', serif;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    min-height:100vh;
+    background:var(--fond);
+    font-family:var(--police);
+    color:var(--texte);
+    display:flex;
+    justify-content:center;
+    padding:24px 16px;
+  }
+
+  .page {
+    width:100%;
+    max-width:420px;
+    text-align:center;
+  }
+
+  h1 { font-size:24px; margin:18px 0 6px; }
+  .sous-titre {
+    color:var(--sous-texte);
+    font-size:14px;
+    margin-bottom:32px;
+  }
+
+  .bouton {
+    display:block;
+    background:var(--bouton);
+    color:var(--bouton-texte);
+    text-decoration:none;
+    padding:16px;
+    border-radius:14px;
+    margin-bottom:14px;
+    font-size:17px;
+    box-shadow:0 2px 8px rgba(0,0,0,.10);
+    transition:transform .1s ease, filter .1s ease;
+  }
+  .bouton:active { transform:scale(.97); filter:brightness(.95); }
+
+  .retour {
+    display:inline-block;
+    margin-top:24px;
+    color:var(--sous-texte);
+    text-decoration:none;
+    font-size:14px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       🎨 ZONE À PERSONNALISER — LE CONTENU (Page 2)
+       ═══════════════════════════════════════════════ -->
+  <div class="page">
+
+    <!-- ✏️ Ton titre -->
+    <h1>Les notices</h1>
+    <p class="sous-titre">Choisis ta version</p>
+
+    <!-- Les boutons : Page 2 → Page 3 et Page 4 -->
+    <!-- ⚠️ Place tes PDF dans le même dossier, avec ces noms exacts -->
+    <a class="bouton" href="notice-modifiee.pdf" target="_blank">💐 Notice modifiée</a>
+    <a class="bouton" href="notice-officielle.pdf" target="_blank">📄 Notice officielle</a>
+
+    <a class="retour" href="index.html">← Retour</a>
+  </div>
+
+</body>
+</html>
